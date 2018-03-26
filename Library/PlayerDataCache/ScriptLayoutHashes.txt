@@ -1,6 +1,6 @@
 iOS
 SceneListBegin?
-Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity
+Assets/UnityARKitPlugin/Examples/UnityARKitScene/UnityARKitScene.unity
 SceneListEnd?
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
@@ -285,16 +285,20 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
-e7fcf7b90f47d05b0aafa98e81d856d8 Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitRemoteConnection
+7b11fe1af3249165dd4a6c8669dce1ec Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitRemoteConnection
+179196ad7a4b4ea54032fb24e507ecf3 Assembly-CSharp.dll:.ARReferenceImage
 516e5cc4558edc3eaf07fa540ce485bf Assembly-CSharp.dll:.ColorPickerTester
 48aac773de77753c007e6b8e5fa95d61 Assembly-CSharp.dll:.ColorPresets
 63ee4d254596e7e33706786578d0fdfc Assembly-CSharp.dll:.AR3DOFCameraManager
+9249a6291c984434be5bc9d5431855d8 Assembly-CSharp.dll:.ARReferenceImagesSet
 3c131bc1fcd62a99173616f1006723eb Assembly-CSharp.dll:.SVBoxSlider
 dd6501652c91cb163a39e051d37a965f Assembly-CSharp.dll:.Ballz
+753b51aff92b02784e731d348f50b108 Assembly-CSharp.dll:.VideoFormatButton
 2e2a7bd47042749813855cedf111f699 Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARGeneratePlane
 c3bbced3b920c972296954f059b11c2e Assembly-CSharp.dll:UnityEngine.UI.BoxSlider
-e3614d77c024e8379444f971096aaac4 Assembly-CSharp.dll:.UnityARCameraManager
+7a569204f9d29c3d307c150aa038ee30 Assembly-CSharp.dll:.UnityARCameraManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARKitControl
+6d618531167cbc047d87ea0faec333a8 Assembly-CSharp.dll:.GenerateImageAnchor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.XR.iOS.ConnectToEditor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARUserAnchorComponent
 16ae33ee0fbf8362ac99a6fb3e017cb6 Assembly-CSharp.dll:.FocusSquare
@@ -307,6 +311,7 @@ e31ef279e8d06182f0817ebd899ff54c Assembly-CSharp.dll:.UnityARUserAnchorExample
 9edf7902d47b30c926fb59fe1da5b67d Assembly-CSharp.dll:UnityEngine.XR.iOS.EditorHitTest
 7317d05fdc27591726053b234b9ea5ee Assembly-CSharp.dll:.ColorSliderImage
 e353101906474689643fc3c6d0a3ba4a Assembly-CSharp.dll:.ColorPicker
+738bb5b4e8842caa959c6c50a4761c37 Assembly-CSharp.dll:.SetWorldOriginControl
 47cf20cc289832e9d0a08b6a7ca8c787 Assembly-CSharp.dll:.ARCameraTracker
 5511a49b5104d2e14b66af50a17125f0 Assembly-CSharp.dll:.ParticlePainter
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BlendshapeDriver
@@ -320,10 +325,13 @@ e353101906474689643fc3c6d0a3ba4a Assembly-CSharp.dll:.ColorPicker
 7a1ee6c718479f4d3cf744edffe2ae7b Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityRemoteVideo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARKitLightManager
-0f997c8641f4c9fcb0d9e2294bf3d6fe Assembly-CSharp.dll:.BallMover
+684e5678660c0d774928fb586b22e996 Assembly-CSharp.dll:.BallMover
 9ffb7700875db16ad444cf26872589b9 Assembly-CSharp.dll:.HexColorField
-72f2094acbbef81528af188bd92eb702 Assembly-CSharp.dll:.BallMaker
+e24f7b0a71a5adf64cb689ba2fdc2e05 Assembly-CSharp.dll:.BallMaker
+eb4fd2b7e0cd698b07603d3e2b00ab7c Assembly-CSharp.dll:.ARKitPlaneMeshRender
+b4c1c774e36b4c43ff0133d4d57455fa Assembly-CSharp.dll:.RelocalizationControl
 12096ddf91bc99172a48b0419861fd00 Assembly-CSharp.dll:.PointCloudParticleExample
 3241ebe8b0922d467d765be7f37fd1ca Assembly-CSharp.dll:.UnityARKitPluginSettings
 c1465577256149eb2fdaaf3754ab7da9 Assembly-CSharp.dll:.TiltWindow
+2aa04874990b59dd49387aff97c37ed1 Assembly-CSharp.dll:.VideoFormatsExample
 22c235e1272a48f3e20a15f3f5552e59 Assembly-CSharp.dll:.UnityARFaceAnchorManager

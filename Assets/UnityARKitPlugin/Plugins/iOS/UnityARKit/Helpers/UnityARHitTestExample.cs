@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace UnityEngine.XR.iOS
 {
@@ -23,6 +24,19 @@ namespace UnityEngine.XR.iOS
             }
             return false;
         }
+
+
+
+        private bool IsPointedOverUIObject(){
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            return results.Count > 0;
+        }
+
+
+
 		
 		// Update is called once per frame
 		void Update () {
@@ -46,7 +60,7 @@ namespace UnityEngine.XR.iOS
 			if (Input.touchCount > 0 && m_HitTransform != null)
 			{
 				var touch = Input.GetTouch(0);
-				if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+                if ((touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) && !IsPointedOverUIObject())
 				{
 					var screenPosition = Camera.main.ScreenToViewportPoint(touch.position);
 					ARPoint point = new ARPoint {
@@ -56,11 +70,13 @@ namespace UnityEngine.XR.iOS
 
                     // prioritize reults types
                     ARHitTestResultType[] resultTypes = {
+						//ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingGeometry,
                         ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
                         // if you want to use infinite planes use this:
                         //ARHitTestResultType.ARHitTestResultTypeExistingPlane,
-                        ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
-                        ARHitTestResultType.ARHitTestResultTypeFeaturePoint
+                        //ARHitTestResultType.ARHitTestResultTypeEstimatedHorizontalPlane, 
+						//ARHitTestResultType.ARHitTestResultTypeEstimatedVerticalPlane, 
+						//ARHitTestResultType.ARHitTestResultTypeFeaturePoint
                     }; 
 					
                     foreach (ARHitTestResultType resultType in resultTypes)
